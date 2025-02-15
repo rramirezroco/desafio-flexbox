@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+:root {
+  --platinum: #e8ebe4;
+  --gray: #bec1bb;
+  --blue-bell: #a491d2;
+  --soap: #cdc3e6;
+  --pale-lavender: #d4dcff;
+  --dark-jungle: #1b1f21;
+  --outer-space: #444749;
+  --old-silver: #828485;
+}
+
+/* GENERALES */
+body {
+  margin: 0;
+  font-family: "Roboto";
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  margin: 1px;
+}
+
+nav {
+  width: 340px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+nav li {
+  padding: 20px;
+  list-style: none;
+}
+
+nav ul {
+  padding: 10px;
+  margin: 0px;
+  height: 70px;
+  border: 1px solid var(--gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nombre-usuario {
+  font-size: 16px;
+  color: var(--dark-jungle);
+}
+
+/* MAIN */
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--platinum);
+  align-items: center;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 300;
+  margin: 10px 0px 5px;
+}
+
+#seccion_main {
+  flex-direction: column;
+  text-align: center;
+}
+
+#seccion_main img {
+  width: 200px;
+}
+
+/* PERFIL */
+.perfil {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.estado-usuario {
+  font-size: 10px;
+  color: var(--gray);
+}
+
+.img-tiny {
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid var(--soap);
+}
+
+.ul-perfil {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.li-datos-usuario {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.iconos {
+  color: var(--old-silver);
+  font-size: 22px;
+  margin: 5px;
+}
+
+.nuevo-chat {
+  height: 100px;
+}
+
+.primary-button {
+  background-color: var(--blue-bell);
+  color: white;
+  padding: 12px 30px;
+  border: 0px;
+  font-size: 16px;
+}
+
+.primary-button:hover {
+  background-color: var(--soap);
+  cursor: pointer;
+}
+
+.primary-button:focus {
+  background-color: var(--platinum);
+}
+
+/* CHATS */
+
+.img-normal {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid var(--soap);
+}
+
+.mensaje-chat {
+  font-size: 14px;
+}
